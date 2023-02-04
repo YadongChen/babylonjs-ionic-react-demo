@@ -1,0 +1,7 @@
+{
+  "name": "babylonjs-ionic-react-demo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
