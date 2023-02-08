@@ -3,9 +3,8 @@ import '@babylonjs/core/Materials/Textures/Loaders'
 // https://github.com/brianzinn/react-babylonjs/issues/182
 import "@babylonjs/core/Helpers/sceneHelpers";
 
-import { Color3, Color4, Vector3 } from '@babylonjs/core/Maths/math';
-import { Engine, Scene } from 'react-babylonjs';
-import React, { FC, Suspense } from 'react';
+import { Color3, Vector3 } from '@babylonjs/core/Maths/math';
+import { FC, Suspense } from 'react';
 
 export const withPresetBrightDisplayScene = (
     // HOCParam: any,
@@ -15,8 +14,7 @@ export const withPresetBrightDisplayScene = (
         const ComponentWithPresetBrightDisplayScene: FC<{ [ key: string ]: any }> = (props) => {
 
             return (
-                <Engine antialias adaptToDeviceRatio canvasId="babylon-js">
-                    <Scene>
+                <>
                         <arcRotateCamera
                             name="arc"
                             target={new Vector3(0, 1, 0)}
@@ -38,17 +36,14 @@ export const withPresetBrightDisplayScene = (
                                 shadowCastChildren
                             >
                             </shadowGenerator> */}
-                            <Suspense
+                            {/* <Suspense
                                     fallback={<box name="preset-bright-display-scene-loading" position={Vector3.Zero()} />}
                                 >
                                     <InnerComponent {...props}></InnerComponent>
-                                </Suspense>
+                                </Suspense> */}
+                                <InnerComponent {...props}></InnerComponent>
                         </directionalLight>
 
-                        <vrExperienceHelper
-                            webVROptions={{ createDeviceOrientationCamera: false, useXR: true }}
-                            enableInteractions
-                        />
                         <environmentHelper
                             options={{
                                 enableGroundShadow: true /* true by default */,
@@ -56,8 +51,7 @@ export const withPresetBrightDisplayScene = (
                             }}
                             setMainColor={[Color3.FromHexString('#74b9ff')]}
                         />
-                    </Scene>
-                </Engine>
+                    </>
             );
         };
         ComponentWithPresetBrightDisplayScene.displayName = `WithPresetBrightDisplayScene(${ InnerComponent.displayName || InnerComponent.name || 'component' })`;

@@ -12,11 +12,13 @@ import {
 } from "@ionic/react";
 
 import { ModelPreview } from "../../components/preview-model/ModelPreview";
-import { withPresetBrightDisplayScene } from "../../components/preset-scenes/withPresetBrightDisplayScene";
+import { withModelLoading } from "../../components/preview-model/withModelLoading";
+import { withPresetBrightDisplayScene } from "../../components/preset-scenes/withPresetBrightDisplay.scene";
+import { withSceneContainer } from "../../components/preset-scenes/withSceneContainer.scene";
 
 export const Preview: React.FC = () => {
 
-    const PreviewScene = withPresetBrightDisplayScene()(ModelPreview);
+    const PreviewScene = withSceneContainer()(withPresetBrightDisplayScene()(withModelLoading()(ModelPreview)));
 
     return (
         <IonPage>

@@ -34,7 +34,7 @@ export const ModelPreview: FC<ModelPreviewProps> = (props) => {
                         name={singleSelectedItem.name}
                         rootUrl={singleSelectedItem.modelFileURLPath}
                         sceneFilename={singleSelectedItem.modelFileName}
-                        scaleToDimension={2}
+                        scaleToDimension={1}
                         position={new Vector3(0 + mapIndex, -2, 0)}
                         onModelLoaded={handleModelLoaded(singleSelectedItem)}
                         // addBehavior={pointerDragBehavior}
