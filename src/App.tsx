@@ -36,7 +36,7 @@ setupIonicReact();
 
 const App: React.FC = () => (
   <IonApp>
-    <IonReactRouter>
+    <IonReactRouter basename='/babylonjs-ionic-react-demo'>
       <IonTabs>
         <IonRouterOutlet>
           <Route exact path="/build">
