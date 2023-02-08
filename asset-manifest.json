@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/babylonjs-ionic-react-demo/static/css/main.45fd5849.css",
-    "main.js": "/babylonjs-ionic-react-demo/static/js/main.47d2635c.js",
+    "main.js": "/babylonjs-ionic-react-demo/static/js/main.69775cfc.js",
     "static/js/298.4b27a731.chunk.js": "/babylonjs-ionic-react-demo/static/js/298.4b27a731.chunk.js",
     "static/js/662.65e2db50.chunk.js": "/babylonjs-ionic-react-demo/static/js/662.65e2db50.chunk.js",
     "static/js/492.49198a99.chunk.js": "/babylonjs-ionic-react-demo/static/js/492.49198a99.chunk.js",
@@ -14,7 +14,7 @@
     "service-worker.js": "/babylonjs-ionic-react-demo/service-worker.js",
     "index.html": "/babylonjs-ionic-react-demo/index.html",
     "main.45fd5849.css.map": "/babylonjs-ionic-react-demo/static/css/main.45fd5849.css.map",
-    "main.47d2635c.js.map": "/babylonjs-ionic-react-demo/static/js/main.47d2635c.js.map",
+    "main.69775cfc.js.map": "/babylonjs-ionic-react-demo/static/js/main.69775cfc.js.map",
     "298.4b27a731.chunk.js.map": "/babylonjs-ionic-react-demo/static/js/298.4b27a731.chunk.js.map",
     "662.65e2db50.chunk.js.map": "/babylonjs-ionic-react-demo/static/js/662.65e2db50.chunk.js.map",
     "492.49198a99.chunk.js.map": "/babylonjs-ionic-react-demo/static/js/492.49198a99.chunk.js.map",
@@ -27,6 +27,6 @@
   },
   "entrypoints": [
     "static/css/main.45fd5849.css",
-    "static/js/main.47d2635c.js"
+    "static/js/main.69775cfc.js"
   ]
 }
