@@ -2,6 +2,7 @@
   "name": "babylonjs-ionic-react-demo",
   "version": "0.0.1",
   "private": true,
+  "homepage": "https://YadongChen.github.io/babylonjs-ionic-react-demo",
   "dependencies": {
     "@babylonjs/core": "^5.44.0",
     "@babylonjs/gui": "^5.44.0",
@@ -23,6 +24,7 @@
     "@types/react-dom": "^18.0.6",
     "@types/react-router": "^5.1.11",
     "@types/react-router-dom": "^5.1.7",
+    "gh-pages": "^5.0.0",
     "history": "^4.9.0",
     "ionicons": "^6.0.3",
     "react": "^18.2.0",
@@ -48,6 +50,8 @@
     "zustand": "^4.3.2"
   },
   "scripts": {
+    "predeploy": "pnpm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --transformIgnorePatterns 'node_modules/(?!(@ionic/react|@ionic/react-router|@ionic/core|@stencil/core|ionicons)/)'",
@@ -72,7 +76,8 @@
     ]
   },
   "devDependencies": {
-    "@capacitor/cli": "4.6.2"
+    "@capacitor/cli": "4.6.2",
+    "@ionic/cli": "^6.20.8"
   },
   "description": "An Ionic project"
 }
