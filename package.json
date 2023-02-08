@@ -50,7 +50,7 @@
     "zustand": "^4.3.2"
   },
   "scripts": {
-    "predeploy": "pnpm run build",
+    "predeploy": "pnpm exec ionic build --prod --base-href https://YadongChen.github.io/babylonjs-ionic-react-demo",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
